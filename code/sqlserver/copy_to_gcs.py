@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import logging
 
 from structlog import get_logger, wrap_logger

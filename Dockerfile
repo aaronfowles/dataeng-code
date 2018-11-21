@@ -8,4 +8,8 @@ COPY . /app
 
 WORKDIR /app
 
-RUN pip install -r requirements.txt
+RUN rm -r .pytest_cache && find . -name '*.pyc' -delete
+
+RUN pip install -e .
+
+RUN pytest

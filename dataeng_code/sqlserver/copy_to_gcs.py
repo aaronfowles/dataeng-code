@@ -9,7 +9,7 @@ def do_something():
 
 if __name__ == '__main__':
 
-    logging.basicConfig(format='%(levelname)s: %(asctime)s %(message)s', level=logging.INFO)
+    logging.basicConfig(format='%(message)s', level=logging.INFO)
     log = logging.getLogger(__name__)
 
     log.info('Starting process.')

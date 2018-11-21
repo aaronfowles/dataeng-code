@@ -17,6 +17,6 @@ setup(
     python_requires=">=3.5.*,",
     entry_points = {
         'console_scripts': [
-            'sqlserver_copy_to_gcs = code.sqlserver.copy_to_gcs']
+            'sqlserver_copy_to_gcs = dataeng_code.sqlserver.copy_to_gcs']
     }
 )

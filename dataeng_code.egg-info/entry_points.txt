@@ -1,0 +1,3 @@
+[console_scripts]
+sqlserver_copy_to_gcs = code.sqlserver.copy_to_gcs
+

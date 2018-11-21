@@ -1,19 +1,12 @@
-import logging
+#!/usr/bin/env python
 
-from structlog import get_logger, wrap_logger
-from structlog.processors import JSONRenderer
+import logging
 
 if __name__ == '__main__':
 
     logging.basicConfig(format='%(levelname)s: %(asctime)s %(message)s', level=logging.INFO)
-    logger = logging.getLogger(__name__)
+    log = logging.getLogger(__name__)
 
-    log = wrap_logger(
-        logger,
-        processors=[
-            JSONRenderer(indent=4, sort_keys=True)
-        ]
-    )
     log.info('Starting process.')
 
     log.info('Finishing process.')

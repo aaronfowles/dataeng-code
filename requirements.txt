@@ -3,7 +3,6 @@ attrs==18.2.0
 cachetools==3.0.0
 certifi==2018.10.15
 chardet==3.0.4
--e git+https://github.com/aaronfowles/dataeng-code.git@ffdf21c3eff56745412ec930ab3849ac663f638a#egg=dataeng_code
 google-api-core==1.5.2
 google-auth==1.6.1
 google-cloud-core==0.28.1

@@ -37,7 +37,7 @@ if __name__ == '__main__':
 
     blob.upload_from_string(
         ', '.join(bucket_io.get_filenames()),
-        content_type='text'
+        content_type='text/plain'
     )
 
     log.info('Finishing process.')

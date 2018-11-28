@@ -1,0 +1,14 @@
+steps:
+- name: 'ubuntu'
+  entrypoint: 'bash'
+  args:
+    - '-c'
+    - echo "Hello, world!" > /text_files/test
+  volumes:
+  - name: 'test_output'
+    path: '/text_files'
+- name: 'ubuntu'
+  args: ['cat',  '/text_files/test']
+  volumes:
+  - name: 'test_output'
+    path: '/text_files'

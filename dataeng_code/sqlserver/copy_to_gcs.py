@@ -30,7 +30,7 @@ if __name__ == '__main__':
 
     log.info('Starting process.')
     bucket_io = BucketIO()
-    bucket_io.bucket_name = 'cloud-cloud-composer-testing'
+    bucket_io.bucket_name = 'code-cloud-composer-testing'
     bucket_io.bucket = bucket_io.get_bucket()
 
     blob = bucket_io.bucket.blob('test_upload')

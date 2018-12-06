@@ -14,5 +14,5 @@ setup(
         'pytest'
     ],
     include_package_data=True,
-    python_requires=">=3.5.*,"
+    python_requires=">=2.7.*"
 )

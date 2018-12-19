@@ -1,3 +1,3 @@
 [
-  "tests/sqlserver/test_copy_to_gcs.py::test_do_something"
+  "tests/sqlserver/test_copy_to_gcs.py::test_pass"
 ]

@@ -1,1 +1,5 @@
-{}
+{
+  "tests/adobe_analytics/test_process.py": true,
+  "tests/sqlserver/test_copy_to_gcs.py::test_do_something": true,
+  "tests/sqlserver/test_copy_to_gcs.py::test_get_filenames_from_gcs_bucket": true
+}

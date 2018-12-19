@@ -7,12 +7,12 @@ install_requires.append('pytest')
 
 setup(
     name='dataeng_code',
-    version='0.0.4',
+    version='0.0.5',
     packages=['dataeng_code'],
     install_requires=install_requires,
     tests_require=[
         'pytest'
     ],
     include_package_data=True,
-    python_requires=">=2.7.*"
+    python_requires=">=3.6.*"
 )

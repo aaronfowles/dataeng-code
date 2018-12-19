@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-
+import argparse
 from google.cloud import storage
 
 import logging
@@ -25,6 +25,14 @@ class BucketIO:
 
 if __name__ == '__main__':
 
+    arg_parser = argparse.ArgumentParser()
+
+    arg_parser.add_argument('--ts')
+
+    args = arg_parser.parse_args()
+
+    ts = args.ts
+
     logging.basicConfig(format='%(message)s', level=logging.INFO)
     log = logging.getLogger(__name__)
 
@@ -36,7 +44,7 @@ if __name__ == '__main__':
     blob = bucket_io.bucket.blob('test_upload')
 
     blob.upload_from_string(
-        ', '.join(bucket_io.get_filenames()),
+        '{0}-{1}'.format(', '.join(bucket_io.get_filenames()), ts),
         content_type='text/plain'
     )
 

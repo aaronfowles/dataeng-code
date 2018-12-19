@@ -41,7 +41,7 @@ if __name__ == '__main__':
     bucket_io.bucket_name = 'dev-cloud-composer-testing'
     bucket_io.bucket = bucket_io.get_bucket()
 
-    blob = bucket_io.bucket.blob('test_upload')
+    blob = bucket_io.bucket.blob('{0}-{1}'.format('test', ts)
 
     blob.upload_from_string(
         '{0}-{1}'.format(', '.join(bucket_io.get_filenames()), ts),

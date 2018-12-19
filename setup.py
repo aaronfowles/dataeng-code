@@ -7,7 +7,7 @@ install_requires.append('pytest')
 
 setup(
     name='dataeng_code',
-    version='0.0.1',
+    version='0.0.4',
     packages=['dataeng_code'],
     install_requires=install_requires,
     tests_require=[

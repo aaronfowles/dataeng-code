@@ -20,7 +20,7 @@ pytest==4.0.0
 pytest-runner==4.2
 pytz==2018.7
 requests==2.20.1
-rsa==4.0
+rsa==4.1
 six==1.11.0
 structlog==18.2.0
 urllib3==1.24.1
